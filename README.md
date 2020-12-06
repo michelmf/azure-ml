@@ -1,2 +1,4 @@
-# azure-ml
-Azure Machine Learning codes and projects
+# Azure Machine Learning Nanodegree 
+
+Azure Machine Learning Projects and codes from the Udacity's Nanodegree
+
