@@ -15,13 +15,13 @@ There are 4 files in this repository related to the experiments:
 
 ## 2. Summary
 
-The dataset [Bank Marketing Data Set](https://archive.ics.uci.edu/ml/datasets/bank+marketing) is related to direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe to a term deposit. The dataset has 21 features (numerical and categorical), and it has 32950 examples. For more information, check the link to the UCI repository. More information about the dataset:
+The dataset [Bank Marketing Data Set](https://archive.ics.uci.edu/ml/datasets/bank+marketing) is related to direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe to a term deposit. The dataset has 21 features (numerical and categorical), it has 32950 examples, and the classes are high imbalanced (~89% not subcribed clients vs ~11% subscribed clients). For more information, check the link to the UCI repository. 
 
-* 
-
-In this project, no exploratory analyses are done, as the focus is on the utilization of the azure ml studio tools and modules.
+In this project, no exploratory analyses are done, as the focus is on the utilization of the azure ml studio tools and modules. Moreover, no balancing techniques are explored.
 
 ## 3. Scikit-learn Pipeline
+
+
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
 **What are the benefits of the parameter sampler you chose?**
@@ -38,12 +38,10 @@ In order to obtain the best result, a 5-fold cross-validation was performed, and
 
 By the results of each model, we have:
 
-* L
-*
+* Logistic Regression with L2-Regularization - 
+* VotingEnsemble - 
 
 By the performances of each model on the test set, it is clear that there is no real or practical difference between both models if they were used in real life. Having said that, we can state that the logistic regression model is a better choice over the xgboost, as it is simpler, more interpretable, faster to train, and faster to predict.
-
-
 
 ## 6. Future work
 
@@ -52,3 +50,9 @@ AutoML is here to help data scientists to be more productive. However, it should
 * better feature engineering of the variables
 * Try different categorization of data
 * Group variables, according to the business experience
+
+Besides that, there are some aspects we can improve, like:
+
+* exploration of class balancing techniques (oversampling of the minority class, subsampling of majority class, synthesis of new data, etc.)
+* Different categorical encodings
+* Utilization of appropriate metrics if the classes are imbalanced
