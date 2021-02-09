@@ -15,7 +15,7 @@ There are 4 files in this repository related to the experiments:
 
 ## 2. Summary
 
-The dataset [Bank Marketing Data Set](https://archive.ics.uci.edu/ml/datasets/bank+marketing) is related to direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe to a term deposit. The dataset has 21 features (numerical and categorical), it has 32950 examples, and the classes are high imbalanced (~89% not subcribed clients vs ~11% subscribed clients). For more information, check the link to the UCI repository. 
+The dataset [Bank Marketing Data Set](https://archive.ics.uci.edu/ml/datasets/bank+marketing) is related to direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe to a term deposit. The dataset has 21 features (numerical and categorical), it has 32950 examples, and the classes are highly imbalanced (~89% not subcribed clients vs ~11% subscribed clients). For more information, check the link to the UCI repository. 
 
 In this project, no exploratory analyses are done, as the focus is on the utilization of the azure ml studio tools and modules. Moreover, no class balancing techniques are explored.
 
@@ -23,9 +23,9 @@ In this project, no exploratory analyses are done, as the focus is on the utiliz
 
 The first model is created using the Scikit-Learn module. The following steps are performed in order to get data ready to be used by the model:
 
-* The dataset is downloaded from the source, and then, stored in azure as a Tabular Dataset
-* After that, a function called *clean_data* is called from the *train.py* script. This functions preprocess data and returns two dataframes, one with the features and the other with the labels associated to each example. The preprocessing step is described later
-* Using the Hyperdrive 
+1. The dataset is downloaded from the source, and then, stored in azure as a Tabular Dataset
+2. After that, a function called *clean_data* is called from the *train.py* script. This functions preprocess data and returns two dataframes, one with the features and the other with the labels associated to each example. The preprocessing step is described later
+3. Using the Hyperdrive 
  First, data is downloaded from source, stored in azure as a TabularDataset
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
@@ -35,7 +35,7 @@ The first model is created using the Scikit-Learn module. The following steps ar
 
 ## 4. AutoML
 
-The AutoML tool helps data scientists to automate the creation of many different algorithms in a few steps, speeding up the search of better models to fit data. Here, 45 different models were tested on different combinations of features selection methods and machine learning algorithms. One interesting AutoML feature is the automatic run of *Data guardrails*, which helps on the identification of potential issues with data, such as imbalanced classes, High cardinality feature handling, and [more](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features).
+The AutoML tool helps data scientists automate the creation of many different algorithms in a few steps, speeding up the search of better models to fit data. Here, 45 different models were tested on different combinations of features selection methods and machine learning algorithms. One interesting AutoML feature is the automatic run of *Data guardrails*, which helps on the identification of potential issues with data, such as imbalanced classes, High cardinality feature handling, and [more](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features).
 
 In order to obtain the best result, a 5-fold cross-validation was performed, and the winning model was the Voting Ensemble with Sparse Normalizer feature selection (the ensemble is a XGBoost algorithm).
 
@@ -46,11 +46,11 @@ By the results of each model, we have:
 * Logistic Regression with L2-Regularization - 
 * VotingEnsemble - 
 
-By the performances of each model on the test set, it is clear that there is no real or practical difference between both models if they were used in real life. Having said that, we can state that the logistic regression model is a better choice over the xgboost, as it is simpler, more interpretable, faster to train, and faster to predict.
+Given the performances of each model on the test set, it is clear that there is no real or practical difference between both models if they were used in production. Taking these facts into account, we can state that the logistic regression model is a better choice over the xgboost, as it is simpler, more interpretable, faster to train, and faster to predict.
 
 ## 6. Future work
 
-AutoML is here to help data scientists to be more productive. However, it should be used with parsimony. The use of AutoML does not guarantee a higher performance when compared to single models, such as a simple logistic regression. In this project, it is clear that sophisticated models (or ensemble of models) do not perform better than simpler ones, and in these cases, we should consider a business-centered approach, such as:
+AutoML helps data scientists to be more productive. However, it should be used carefully. The use of AutoML does not guarantee a higher performance when compared to single models, such as a simple logistic regression. In this project, it is clear that sophisticated models (or ensemble of models) do not perform better than simpler ones, and in these cases, we should consider a business-centered approach, such as:
 
 * better feature engineering of the variables
 * Try different categorization of data
