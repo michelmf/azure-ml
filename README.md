@@ -12,7 +12,7 @@ Some topics discussed in this nanodegree:
 * Automated ML (autoML), Hyperparameter tuning
 * Pipeline Optimization
 * Machine Learning Operations (MLOps)
-* Serving Models through REST APIs
+* Serving Models through Azure using REST APIs
 
 
 ## Projects
