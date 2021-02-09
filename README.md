@@ -28,3 +28,7 @@ Technologies involved:
 * Python/Azureml packages
 * Azure Designer
 * Azure Pipelines
+
+### 2. Operationalizing Machine Learning
+
+Continuing the evolution of the past project, here we continue to work with the Bank Marketing dataset. We must use Azure to configure a cloud-based machine learning production model, deploy it, and consume it. We also create, publish, and consume a pipeline. In the end, a screencast video is recorded to show how the project works.
