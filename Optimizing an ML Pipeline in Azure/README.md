@@ -17,11 +17,16 @@ There are 4 files in this repository related to the experiments:
 
 The dataset [Bank Marketing Data Set](https://archive.ics.uci.edu/ml/datasets/bank+marketing) is related to direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe to a term deposit. The dataset has 21 features (numerical and categorical), it has 32950 examples, and the classes are high imbalanced (~89% not subcribed clients vs ~11% subscribed clients). For more information, check the link to the UCI repository. 
 
-In this project, no exploratory analyses are done, as the focus is on the utilization of the azure ml studio tools and modules. Moreover, no balancing techniques are explored.
+In this project, no exploratory analyses are done, as the focus is on the utilization of the azure ml studio tools and modules. Moreover, no class balancing techniques are explored.
 
 ## 3. Scikit-learn Pipeline
 
+The first model is created using the Scikit-Learn module. The following steps are performed in order to get data ready to be used by the model:
 
+* The dataset is downloaded from the source, and then, stored in azure as a Tabular Dataset
+* After that, a function called *clean_data* is called from the *train.py* script. This functions preprocess data and returns two dataframes, one with the features and the other with the labels associated to each example. The preprocessing step is described later
+* Using the Hyperdrive 
+ First, data is downloaded from source, stored in azure as a TabularDataset
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
 **What are the benefits of the parameter sampler you chose?**
