@@ -26,10 +26,15 @@ In this project, no exploratory analyses are done, as the focus is on the utiliz
 The first model is created using the Scikit-Learn module. The following steps are performed in order to get data ready to be used by the model:
 
 1. The dataset is downloaded from the source, and then, stored in azure as a Tabular Dataset
+
 2. After that, a function called *clean_data* is called from the *train.py* script. This functions preprocess data and returns two dataframes, one with the features and the other with the labels associated to each example. The preprocessing step is described later
+
 3. The next step in pipeline is the split of examples into disjoint sets: the training set, and test set.
+
 4. The logistic regression model is trained using the Scikit-Learn implementation of the algorithm on the training set
-5. Here, the hyperdrive come in: it is used to search for the best combination of hyperparameters. In the case of this project, the number of maximum iterations of the algorithm, and the regularization strength
+
+5. Here, the hyperdrive come in: it is used to search for the best combination of hyperparameters. In the case of this project, the number of maximum iterations of the algorithm, and the regularization strength (--C and --max_iter
+
 6. The accuracy is checked on the teste set
 
 
