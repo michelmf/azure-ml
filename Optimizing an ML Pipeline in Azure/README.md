@@ -43,10 +43,10 @@ In order to obtain the best result, a 5-fold cross-validation was performed, and
 
 By the results of each model, we have:
 
-* Logistic Regression with L2-Regularization - 
-* VotingEnsemble - 
+* Logistic Regression with L2-Regularization - 0.9163
+* VotingEnsemble - 0.9212
 
-Given the performances of each model on the test set, it is clear that there is no real or practical difference between both models if they were used in production. Taking these facts into account, we can state that the logistic regression model is a better choice over the xgboost, as it is simpler, more interpretable, faster to train, and faster to predict.
+Given the performances of each model on the test set (~0,0049), it is clear that there is no real or practical difference between both models if they were used in production. Taking these facts into account, we can state that the logistic regression model is a better choice over the xgboost, as it is simpler, more interpretable, faster to train, and faster to predict.
 
 ## 6. Future work
 
