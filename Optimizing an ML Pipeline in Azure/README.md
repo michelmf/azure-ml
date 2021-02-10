@@ -33,11 +33,11 @@ The first model is created using the Scikit-Learn module. The following steps ar
 
 4. The logistic regression model is trained using the Scikit-Learn implementation of the algorithm on the training set
 
-5. Here, the hyperdrive come in: it is used to search for the best combination of hyperparameters. In the case of this project, the number of maximum iterations of the algorithm, and the regularization strength (--C and --max_iter
+5. Here, the hyperdrive come in: it is used to search for the best combination of hyperparameters. In the case of this project, the number of maximum iterations of the algorithm, and the regularization strength (--C and --max_iter)
 
 6. The accuracy is checked on the teste set
 
-
+The hyperdrive package helps us in the task of hyperparameter tuning, which leads to the best performance of our model, given the training set. Finding the best combination of these hyperparameters is a consuming task, considering the assessment of a long list of combinations of each variable (in our case with only two hyperparameters, a list of *M* C inverse regularization factors and *N* max_iter iterations of the algorithm would lead to *MxN* runs).   
 
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
