@@ -37,13 +37,16 @@ The first model is created using the Scikit-Learn module. The following steps ar
 
 6. The accuracy is checked on the teste set
 
-The hyperdrive package helps us in the task of hyperparameter tuning, which leads to the best performance of our model, given the training set. Finding the best combination of these hyperparameters is a consuming task, considering the assessment of a long list of combinations of each variable (in our case with only two hyperparameters, a list of *M* C inverse regularization factors and *N* max_iter iterations of the algorithm would lead to *MxN* runs).   
+### 3.2 Hyperdrive and hyperparameter tuning
 
-**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+The hyperdrive package helps us in the hyperparameter tuning task, which leads to the best performance of our model, given the training set. Finding the best combination of these hyperparameters is a consuming task, considering a list of possible combinations of each variable (in our case with only two hyperparameters, a list of *M* C inverse regularization factors and *N* max_iter iterations of the algorithm would lead to *MxN* runs). Not selecting all combinations would decrease the experiments's time, and still lead us to good results. In this case, a *random selection* of parameters would help us to get some results in less time.
 
-**What are the benefits of the parameter sampler you chose?**
+Moreover, hyperdrive monitors the runs and their results, using predefined policies that can interrupt an experiment if the criteria is not met. It is useful when a combination of parameters is chosen, however the performance of the model using them is unacceptable and far from the best results so far.
 
-**What are the benefits of the early stopping policy you chose?**
+Thus, the following choices regarding hyperdrive were taken:
+
+* Parameter Sampling - Random Parameter sampling, as we can select both continuous and discrete values from a list
+* BanditPolicy - Early termination based on some criteria, it stops the run if the performance is far below from the best run
 
 ## 4. AutoML
 
