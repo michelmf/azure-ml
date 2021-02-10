@@ -62,3 +62,4 @@ Besides that, there are some aspects we can improve, like:
 * Different categorical encodings
 * Utilization of appropriate metrics if the classes are imbalanced
 * Increase the range of values for hyperparameter search in logistic regression
+* Explore different metrics
