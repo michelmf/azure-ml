@@ -3,7 +3,7 @@
 ## 1. Overview
 
 After finishing the training of a mchine learning model, now it is time to put it into production! In this second project of the azure machine learning nanodegree, we must 
-use Azure to configure a cloud-based machine learning production model, deploy it, and consume it using the model trained in the [first project](https://github.com/michelmf/azure-ml/tree/main/Optimizing%20an%20ML%20Pipeline%20in%20Azure). Also, we will create, publish, and consume a pipeline. 
+use Azure to configure a cloud-based machine learning production model, deploy it, and consume it using an AutoML model trained using the same procedure in the [first project](https://github.com/michelmf/azure-ml/tree/main/Optimizing%20an%20ML%20Pipeline%20in%20Azure). Also, we will create, publish, and consume a pipeline. 
 
 ## 2. Summary
 
