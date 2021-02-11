@@ -50,7 +50,21 @@ Thus, the following choices regarding hyperdrive were taken:
 
 ## 4. AutoML
 
-The AutoML tool helps data scientists automate the creation of many different algorithms in a few steps, speeding up the search of better models to fit data. Here, 45 different models were tested on different combinations of features selection methods and machine learning algorithms. One interesting AutoML feature is the automatic run of *Data guardrails*, which helps on the identification of potential issues with data, such as imbalanced classes, High cardinality feature handling, and [more](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features).
+The AutoML tool helps data scientists automate the creation of many different algorithms in a few steps, speeding up the search for better models to fit data. Here, 45 different models were tested on different combinations of feature selection methods and machine learning algorithms. One interesting AutoML feature is the automatic run of *Data guardrails*, which helps in the identification of potential issues with data, such as imbalanced classes, High cardinality feature handling, and [more](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features).
+
+Before triggering the AutoML training process, we must specify in the configuration what should be done. The parameters below were used:
+
+* experiment_timeout_minutes - The maximum time spent on the training. Since there is a cost to use the AutoML on azure, 30 minutes is an acceptable time to get some trained models based on the size of our dataset 
+
+* task - The kind of supervised learning problem we are trying to solve. Since we want to classify customer in two groups, *classification* is chosen
+
+* primary_metric - The specific metric for the problem. Here, *accuracy* is used. However, I believe it is not the right choice for this problem, as the dataset is highly imbalanced. Other metrics would be preferable in this scenario, such as *precision* and *f1-score* for example
+
+* training_data - The portion of the information we are going to use to *train* our model, or "teach it" how to correctly classify the instances
+
+* label_column_name - labels of each example
+
+* n_cross_validation - Number of folds used to train the model. As we need to find the best model, we use a validation set to compare the scores of each model 
 
 In order to obtain the best result, a 5-fold cross-validation was performed, and the winning model was the Voting Ensemble with Sparse Normalizer feature selection (the ensemble is a XGBoost algorithm).
 
