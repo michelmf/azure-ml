@@ -30,8 +30,13 @@ TODO: Provide an architectual diagram of the project and give an introduction of
 
 ### 3.1 Authorization
 
+* Install *az* and enable it in the terminal
+* *az login* has succeeded
+* Install the Azure Machine Learning Extension
 * Create the Service Principal and allow it access the machine learning studio workspace
-
+* Take a screenshot showing that a *"Service Principal"* has been created
+* *az ml workspace share* completed without errors
+* Tae a screenshot showing that the az ml workspace share command has been run successfully, with no errors or tracebacks
 
 Print Screens from the process:
 
@@ -41,9 +46,17 @@ Print Screens from the process:
 
 ### 3.2 Automated ML
 
+* Create a new Automated ML run
 * Upload the Bankmarketing dataset
 * Create a new Automated ML experiment
 * Run the experiment and get the best model
+
+
+![Select and upload the bankmarketing dataset](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/dataset.PNG)
+
+![Take a screenshot showing that the experiment is shown as completed](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/sp.PNG)
+
+![Take a screenshot of the best model after the experiment completes](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/sp.PNG)
 
 Screen Recording
 TODO Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
