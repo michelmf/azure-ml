@@ -85,12 +85,12 @@ AutoML helps data scientists to be more productive. However, it should be used c
 
 * Try different categorization of data - explore more techniques than One-Hot Encoding (OHE), and dummy variables
 
-* Group variables, according to the business experience - maybe considering less classes in each variable can benefit the classification of the clients
+* Group variables, according to the business experience - maybe considering fewer classes in each variable can benefit the classification of clients
 
 Besides that, there are some aspects we can improve, like:
 
 * Exploration of class balancing techniques (oversampling of the minority class, subsampling of majority class, synthesis of new data, etc.)
 
-* Utilization of appropriate metrics if the classes are imbalanced - As mentioned before, accuracy is not the best metric to this problem; precision would be a better choice
+* Utilization of appropriate metrics if the classes are imbalanced - As mentioned before, accuracy is not the best metric for this problem; precision would be a better choice
 
 * Increase the range of values for hyperparameter search in logistic regression - Explore more parameters in the search space
