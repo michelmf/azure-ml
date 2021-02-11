@@ -29,7 +29,7 @@ The first model is created using the Scikit-Learn module. The following steps ar
 
 2. After that, a function called *clean_data* is called from the *train.py* script. This functions preprocess data and returns two dataframes, one with the features and the other with the labels associated to each example. The preprocessing step is described later
 
-3. The next step in pipeline is the split of examples into disjoint sets: the training set, and test set.
+3. The next step in pipeline is the split of examples into disjoint sets: the training set, and test set
 
 4. The logistic regression model is trained using the Scikit-Learn implementation of the algorithm on the training set
 
@@ -81,14 +81,16 @@ Given the performances of each model on the test set (~0,0049), it is clear that
 
 AutoML helps data scientists to be more productive. However, it should be used carefully. The use of AutoML does not guarantee a higher performance when compared to single models, such as a simple logistic regression. In this project, it is clear that sophisticated models (or ensemble of models) do not perform better than simpler ones, and in these cases, we should consider a business-centered approach, such as:
 
-* better feature engineering of the variables
-* Try different categorization of data
-* Group variables, according to the business experience
+* Better feature engineering of the variables - Here, we have not focused on the exploratory data analysis and preprocessing steps. It is common to apply methods to assess the importance of each feature. Applying feature selection is one step that could lead to better classifiers. Features that do not help in the classification problem could introduce "noise" to the problem, decreasing the performance of the trained models.
+
+* Try different categorization of data - explore more techniques than One-Hot Encoding (OHE), and dummy variables
+
+* Group variables, according to the business experience - maybe considering less classes in each variable can benefit the classification of the clients
 
 Besides that, there are some aspects we can improve, like:
 
 * Exploration of class balancing techniques (oversampling of the minority class, subsampling of majority class, synthesis of new data, etc.)
-* Different categorical encodings
-* Utilization of appropriate metrics if the classes are imbalanced
-* Increase the range of values for hyperparameter search in logistic regression
-* Explore different metrics
+
+* Utilization of appropriate metrics if the classes are imbalanced - As mentioned before, accuracy is not the best metric to this problem; precision would be a better choice
+
+* Increase the range of values for hyperparameter search in logistic regression - Explore more parameters in the search space
