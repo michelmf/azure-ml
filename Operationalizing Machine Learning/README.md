@@ -36,7 +36,7 @@ These steps will be described in the following sections.
 * *az ml workspace share* completed without errors
 * Tae a screenshot showing that the az ml workspace share command has been run successfully, with no errors or tracebacks
 
-Print Screens from the process:
+Screenshots of the CLI:
 
 ![Create the service principal (sp) and allow the access to your specific workspace](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/sp.PNG)
 
