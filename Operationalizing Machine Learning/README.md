@@ -17,15 +17,16 @@ In this project, we have to deal with the following steps:
 * Consume model endpoints
 * Create and publish a pipeline
 
-### 2.1 Architectural Diagram
+These steps will be described in the following sections.
+
+## 3. Architectural Diagram
 
 ![Flow of the project](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/Capture.PNG)
 
-TODO: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model".
 
-## 3. Key Steps
+## 4. Key Steps
 
-### 3.1 Authorization
+### 4.1 Authorization
 
 * Install *az* and enable it in the terminal
 * *az login* has succeeded
@@ -41,7 +42,7 @@ Print Screens from the process:
 
 ![Take a screeshot showing that the *az ml workspace share* command has been run successfully, with no errors or tracebacks](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/role.PNG)
 
-### 3.2 Automated ML
+### 4.2 Automated ML
 
 * Create a new Automated ML run
 * Upload the Bankmarketing dataset
