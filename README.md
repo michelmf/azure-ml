@@ -19,7 +19,7 @@ Some topics discussed in this nanodegree:
 
 ### 1. Optimizing an ML Pipeline in Azure
 
-![Overview of the project](https://github.com/michelmf/azure-ml/blob/main/Optimizing%20an%20ML%20Pipeline%20in%20Azure/diagram.PNG)
+![Overview of the project](https://github.com/michelmf/azure-ml/blob/main/Optimizing%20an%20ML%20Pipeline%20in%20Azure/diagram.PNG?style=centerme)
 
 In this project, an end-to-end project is developed using the Azure Machine Learning Studio and the Python programming language. The main goal here is to create two models, the first one is a L2-regularized logistic regression with hyperparameter tuning using the hyperdrive package. The other model is chosen using the AutoML tool available on Azure ML studio, and the best one is chosen. After using both approaches, the models are compared in the same test set. 
 
