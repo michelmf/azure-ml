@@ -19,6 +19,8 @@ Some topics discussed in this nanodegree:
 
 ### 1. Optimizing an ML Pipeline in Azure
 
+![Overview of the project](https://github.com/michelmf/azure-ml/blob/main/Optimizing%20an%20ML%20Pipeline%20in%20Azure/diagram.PNG)
+
 In this project, an end-to-end project is developed using the Azure Machine Learning Studio and the Python programming language. The main goal here is to create two models, the first one is a L2-regularized logistic regression with hyperparameter tuning using the hyperdrive package. The other model is chosen using the AutoML tool available on Azure ML studio, and the best one is chosen. After using both approaches, the models are compared in the same test set. 
 
 Technologies involved:
@@ -32,6 +34,8 @@ Technologies involved:
 ### 2. Operationalizing Machine Learning
 
 Continuing the evolution of the past project, here we continue to work with the Bank Marketing dataset. We must use Azure to configure a cloud-based machine learning production model, deploy it, and consume it. We also create, publish, and consume a pipeline. In the end, a screencast video is recorded to show how the project works.
+
+![Oveview of the project](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/Capture.PNG)
 
 Technologies involved:
 
