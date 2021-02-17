@@ -14,7 +14,6 @@ Some topics discussed in this nanodegree:
 * Machine Learning Operations (MLOps)
 * Serving Models through Azure using REST APIs
 
-
 ## Projects
 
 ### 1. Optimizing an ML Pipeline in Azure
