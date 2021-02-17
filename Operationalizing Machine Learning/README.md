@@ -17,7 +17,7 @@ In this project, we have to deal with the following steps:
 * Consume model endpoints
 * Create and publish a pipeline
 
-## 2. Architectural Diagram
+### 2.1 Architectural Diagram
 
 ![Flow of the project](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/Capture.PNG)
 
