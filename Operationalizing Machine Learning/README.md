@@ -10,17 +10,11 @@ use Azure to configure a cloud-based machine learning production model, deploy i
 In this project, we have to deal with the following steps:
 
 * Authentication
-
 * Automated ML Experiment
-
 * Deployment of the best model
-
 * Application Logging
-
 * Swagger Documentation
-
 * Consume model endpoints
-
 * Create and publish a pipeline
 
 ## 2. Architectural Diagram
