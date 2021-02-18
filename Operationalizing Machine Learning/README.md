@@ -21,7 +21,7 @@ These steps will be described in the following sections.
 
 ## 3. Architectural Diagram
 
-![Flow of the project](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/overview.PNG)
+![Flow of the project](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/overview.png)
 
 ## 4. Key Steps
 
