@@ -22,7 +22,7 @@ Moreover, I would like to try different AutoML tools instead of restricting the 
 
 ### 4.1 Standard Models
 
-Here, I call standard models the easiest models I can deploy to check their performances and behaviors. Here my list of models that I am used to trying first:
+Here, I call standard models the easiest models I can train to check their performances and behaviors since most of them are capable of interpretation of trained parameters. Here my list of models that I am going to try:
 
 * Decision Trees
 * Random Forest
