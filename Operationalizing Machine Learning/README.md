@@ -67,10 +67,22 @@ As a proof of completion, the screenshots below show that the tasks were done su
 
 ![Take a screenshot of the best model after the experiment completes](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/figures/model.png)
 
-## 5. Deployment of the best model
+### 4.3. Deployment of the best model
 
 Now it is time to deploy the best model we trained.
 
+
+
+
+As a proof of completion, the screenshots below show that the tasks were done successfully.
+
+![Deployment configuration of the model using Azure Container Instance (ACI)](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/figures/best_model.png)
+
+![Model Deployed](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/figures/model_deployed.PNG)
+
+### 4.4. Enable Application Insights
+
+Although the Application Insights were activated in the deployment, we must enable that by code, according to the project's rubric.
 
 
 
