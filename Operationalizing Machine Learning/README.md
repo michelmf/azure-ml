@@ -67,8 +67,15 @@ As a proof of completion, the screenshots below show that the tasks were done su
 
 ![Take a screenshot of the best model after the experiment completes](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/figures/model.png)
 
-Screen Recording
-TODO Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+## 5. Deployment of the best model
 
-Standout Suggestions
-TODO (Optional): This is where you can provide information about any standout suggestions that you have attempted.
+Now it is time to deploy the best model we trained.
+
+
+
+
+As a proof of completion, the screenshots below show that the tasks were done successfully.
+
+![Deployment configuration of the model using Azure Container Instance (ACI)](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/figures/best_model.png)
+
+![Model Deployed](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/figures/model_deployed.PNG)
