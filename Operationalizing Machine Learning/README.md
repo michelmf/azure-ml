@@ -50,19 +50,22 @@ Screenshots of the CLI:
 
 ### 4.2 Automated ML
 
-After configuring the Authorization to the ML environment, we use the Azure AutoML to train a model using the same dataset as the [first project](https://github.com/michelmf/azure-ml/tree/main/Optimizing%20an%20ML%20Pipeline%20in%20Azure).
+After configuring the Authorization to the ML environment, we use the Azure AutoML to train a model using the same dataset as the [first project](https://github.com/michelmf/azure-ml/tree/main/Optimizing%20an%20ML%20Pipeline%20in%20Azure). These steps were done:
 
-* Create a new Automated ML run
 * Upload the Bankmarketing dataset
+* Create a new Automated ML run
 * Create a new Automated ML experiment
 * Run the experiment and get the best model
 
+As a proof of completion, the screenshots below show that the tasks were done successfully.
 
-![Select and upload the bankmarketing dataset](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/dataset.PNG)
+![Select and upload the bankmarketing dataset](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/figures/dataset_image.png)
 
-![Take a screenshot showing that the experiment is shown as completed](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/sp.PNG)
+![Take a screenshot showing that the experiment is shown as completed](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/figures/experiment.png)
 
-![Take a screenshot of the best model after the experiment completes](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/sp.PNG)
+![Take a screenshot of the experiment's settings](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/figures/settings.png)
+
+![Take a screenshot of the best model after the experiment completes](https://github.com/michelmf/azure-ml/blob/main/Operationalizing%20Machine%20Learning/figures/model.png)
 
 Screen Recording
 TODO Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
