@@ -27,7 +27,7 @@ These steps will be described in the following sections.
 
 ### 4.1 Authentication and Authorization
 
-Before deploying any artifact to production, we must take care of the security of our systems. Unauthorized access to a production model could . Another important aspect of Authentication is the CI/CD flow, as Continuous Integration and Continuous Delivery (CI/CD) relies on automated tasks, human intervention is needed when these steps are not configured properly. In Azure, we can use a Service Principal to help us in both scenarios. A Service Principal is a user role with controlled permissions to access specific resources. Using a service principal is a great way to allow authentication while reducing the scope of permissions, which enhances security.
+Before deploying any artifact to production, we must take care of the security of our systems. Unauthorized access to a production model could leak vital information of the business, and lead to the collapse of the company. Another important aspect of Authentication is the CI/CD flow, as Continuous Integration and Continuous Delivery (CI/CD) relies on automated tasks, human intervention is needed when these steps are not configured properly. In Azure, we can use a Service Principal to help us in both scenarios. A Service Principal is a user role with controlled permissions to access specific resources. Using a service principal is a great way to allow authentication while reducing the scope of permissions, which enhances security.
 
 Below, the steps needed to properly configure the authentication/authorization step to access the Azure ML Studio environment:
 
